@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>School Club Information</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #f8f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #6e0e0a;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px solid #6e0e0a;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 20px;
+            color: #6e0e0a;
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #6e0e0a;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #6e0e0a;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 7px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8b1210;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>School Club Information</h1>
+        <hr>
+
+        <label>Select a club:</label>
+        <select id="clubDropdown">
+            <option value="Art_club">Art Club</option>
+            <option value="Chess_club">Chess Club</option>
+            <option value="Ict_club">ICT Club</option>
+        </select>
+
+        <button id="showBtn">Show Club Information</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
